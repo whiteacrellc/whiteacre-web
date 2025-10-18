@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Acre Software</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Adjusted font for a more modern, iOS-like feel */
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light gray background */
+            color: #333; /* Dark gray text */
+        }
+        header {
+            background-color: #222; /* Dark gray header */
+            color: #fff; /* White text */
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            /* Adjust width and height for your banner image if needed */
+            width: 100%; /* Make image responsive to header width */
+            max-height: 530px; /* Example max height, adjust as needed */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+        nav {
+            background-color: #444; /* Medium gray nav */
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #222; /* Dark gray headers */
+            font-weight: 700;
+        }
+        h2 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            /* Remove fixed positioning for better mobile scroll */
+            /* position: fixed; */
+            width: 100%;
+            bottom: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* --- New Privacy Policy Styles --- */
+
+        #privacy {
+            background-color: #e9e9e9; /* Slightly darker section background for contrast */
+            padding: 40px 20px;
+        }
+
+        .privacy-group {
+            background-color: #ffffff; /* White box background */
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .group-header {
+            padding: 15px 20px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .group-header .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+            line-height: 1;
+        }
+        
+        /* Color mapping for a nice visual separation */
+        .group-commitment .icon { color: #28a745; } /* Success/Green */
+        .group-data .icon { color: #007aff; } /* Primary/Blue */
+        .group-local .icon { color: #ffc107; } /* Warning/Yellow */
+        .group-permissions .icon { color: #dc3545; } /* Error/Red */
+        .group-thirdparty .icon { color: #6c757d; } /* Tertiary/Gray */
+        .group-disclaimer .icon { color: #dc3545; } /* Error/Red */
+        .group-contact .icon { color: #17a2b8; } /* Secondary/Teal */
+
+        .group-content {
+            padding: 20px;
+        }
+
+        .group-content p {
+            margin-top: 0;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+
+        .group-content strong {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .sub-list {
+            margin-top: 15px;
+        }
+
+        .sub-list p {
+            font-size: 0.9em;
+            color: #6c757d; /* Muted subtext color */
+            margin-bottom: 5px;
+            text-indent: -1.2em;
+            padding-left: 1.2em;
+        }
+        
+        .sub-list p::before {
+            content: "•";
+            margin-right: 0.5em;
+        }
+
+        .effective-date {
+            font-size: 0.8em;
+            color: #999;
+            font-style: italic;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .privacy-footer {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 0.8em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="gem.jpg" alt="White Acre Software Banner Image">
+        <h1>White Acre Software</h1>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>White Acre Software is a consulting firm specializing in creating custom applications for various platforms. Founded by Tom Whittaker, we bring innovative solutions to your software needs.</p>
+        <p>Tom Whittaker, based in Wanda, Minnesota, is the owner and lead developer. With a passion for technology, Tom is easily distracted by shiny objects, which fuels his curiosity and creativity in software development.</p>
+        <p>Learn more about Tom on his <a href="https://www.linkedin.com/in/tomwhittaker/">LinkedIn profile</a>.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer consulting services and develop applications tailored to your requirements. Our expertise includes:</p>
+        <ul>
+            <li>Custom software development</li>
+            <li>Mobile app creation (iOS with Swift)</li>
+            <li>Desktop applications (C#)</li>
+            <li>Containerized solutions (Docker)</li>
+            <li>Technical consulting and advice</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <p>Check out some of our open-source repositories on GitHub:</p>
+        <ul>
+            <li><a href="https://github.com/whiteacrellc/grace">Grace</a> - C# project</li>
+            <li><a href="https://github.com/whiteacrellc/cathnow">Cathnow</a> - Swift project</li>
+            <li><a href="https://github.com/whiteacrellc/cellp">Cellp</a> - Dockerfile-based project</li>
+        </ul>
+        <p>Visit our <a href="https://github.com/whiteacrellc">GitHub page</a> for more.</p>
+    </section>
+
+    <section id="privacy">
+        <h2>Privacy Policy for Cath Now</h2>
+
+        <div class="privacy-group group-commitment">
+            <div class="group-header">
+                <span class="icon">✅</span>Our Commitment
+            </div>
+            <div class="group-content">
+                <p>White Acre Software LLC is committed to protecting your privacy and ensuring the security of your personal information. This privacy policy explains our data practices for the **Cath Now** application.</p>
+                <span class="effective-date">Effective Date: September 2025</span>
+            </div>
+        </div>
+
+        <div class="privacy-group group-data">
+            <div class="group-header">
+                <span class="icon">👁️‍🗨️</span>Zero Data Collection
+            </div>
+            <div class="group-content">
+                <p><strong>White Acre Software LLC does not collect, store, or transmit any personal data or usage information from the Cath Now application.</strong></p>
+                <div class="sub-list">
+                    <p>No personal health information is collected</p>
+                    <p>No usage analytics or tracking data is gathered</p>
+                    <p>No device identifiers or personal identifiers are accessed</p>
+                    <p>No network communications for data collection purposes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-group group-local">
+            <div class="group-header">
+                <span class="icon">🔒</span>Local Storage Only
+            </div>
+            <div class="group-content">
+                <p>All application settings and preferences are stored locally on your device using iOS standard secure storage mechanisms.</p>
+                <div class="sub-list">
+                    <p>Alarm intervals and settings remain on your device only</p>
+                    <p>Sound preferences are stored locally</p>
+                    <p>No data synchronization or cloud storage</p>
+                    <p>Data is removed when the application is deleted</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-group group-permissions">
+            <div class="group-header">
+                <span class="icon">🔔</span>Minimal Permissions
+            </div>
+            <div class="group-content">
+                <p>The application requests only essential system permissions required for core functionality.</p>
+                <div class="sub-list">
+                    <p>Notification permission: Required for medical reminders</p>
+                    <p>Audio playback: Used only for local alarm sounds</p>
+                    <p>No microphone access: Audio is playback only</p>
+                    <p>No location, camera, or contact access requested</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="privacy-group group-thirdparty">
+            <div class="group-header">
+                <span class="icon">🚫</span>No Third Parties
+            </div>
+            <div class="group-content">
+                <p><strong>The Cath Now application does not integrate with any third-party services, analytics platforms, or advertising networks.</strong></p>
+                <div class="sub-list">
+                    <p>No third-party SDKs or frameworks that collect data</p>
+                    <p>No advertising networks or tracking pixels</p>
+                    <p>No social media integrations</p>
+                    <p>Fully offline operation capability</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-group group-disclaimer">
+            <div class="group-header">
+                <span class="icon">⚕️</span>Medical Use Disclaimer
+            </div>
+            <div class="group-content">
+                <p>The Cath Now application is designed as a reminder tool to assist with medical routine management.</p>
+                <div class="sub-list">
+                    <p>This application is not a medical device</p>
+                    <p>Always consult healthcare professionals for medical advice</p>
+                    <p>Application functionality depends on device operation</p>
+                    <p>Users are responsible for following medical guidance</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-group group-contact">
+            <div class="group-header">
+                <span class="icon">📧</span>Contact & Updates
+            </div>
+            <div class="group-content">
+              <p>If you have questions about this privacy policy or our data practices, please contact White Acre Software at
+		<a emailto="support@cathnow.com">support@cathnow.com</a>.</p>
+                <p>Company: White Acre Software LLC</p>
+                <span class="effective-date">This privacy policy may be updated to reflect changes in our practices or legal requirements. The effective date will be updated accordingly.</span>
+            </div>
+        </div>
+
+        <div class="privacy-footer">
+            <p>© 2025 White Acre Software LLC | Last Updated: September 2025</p>
+            <p>This privacy policy governs the use of the Cath Now application</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Location: Wanda, Minnesota, United States</p>
+        <p>For inquiries, connect with Tom Whittaker on LinkedIn or explore our GitHub repositories.</p>
+    </section>
+    
+    <footer>
+        &copy; 2025 White Acre Software. All rights reserved.
+    </footer>
+</body>
+</html>
