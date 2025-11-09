@@ -162,6 +162,49 @@
             font-size: 0.8em;
             color: #6c757d;
         }
+
+        /* --- Downloads Section Styles --- */
+        #downloads {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+            min-width: 180px;
+        }
+
+        .download-button:hover {
+            background-color: #333;
+        }
+
+        .download-button.app-store {
+            background-color: #000;
+        }
+
+        .download-button.google-play {
+            background-color: #01875f;
+        }
+
+        .download-button.google-play:hover {
+            background-color: #016d4c;
+        }
     </style>
 </head>
 <body>
@@ -174,6 +217,7 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
+        <a href="#downloads">Downloads</a>
         <a href="#privacy">Privacy Policy</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -202,10 +246,19 @@
         <p>Check out some of our open-source repositories on GitHub:</p>
         <ul>
             <li><a href="https://github.com/whiteacrellc/grace">Grace</a> - C# project</li>
-            <li><a href="https://github.com/whiteacrellc/cathnow">Cath Rndr</a> - iPhone version of the <a href="https://cathdmdr.com">Cath Rmdr App</a>.</li>
-            <li><a href="https://github.com/whiteacrellc/nowcath">Cath Rmdr</a> - Android version of the <a href="https://cathdmdr.com">Cath Rmdr App</a>.</li>
+            <li><a href="https://github.com/whiteacrellc/cathnow">Cath Rndr</a> - iPhone version of the <a href="https://cathrmdr.com">Cath Rmdr App</a>.</li>
+            <li><a href="https://github.com/whiteacrellc/nowcath">Cath Rmdr</a> - Android version of the <a href="https://cathrmdr.com">Cath Rmdr App</a>.</li>
         </ul>
         <p>Visit our <a href="https://github.com/whiteacrellc">GitHub page</a> for more.</p>
+    </section>
+
+    <section id="downloads">
+        <h2>Download Cath Rmdr</h2>
+        <p>Get the Cath Rmdr app on your mobile device:</p>
+        <div class="download-buttons">
+            <a href="https://apps.apple.com/us/app/cathrmdr/id6752548778" class="download-button app-store">Download on App Store</a>
+            <a href="https://play.google.com/apps/internaltest/4701594884353037595" class="download-button google-play">Get it on Google Play</a>
+        </div>
     </section>
 
     <section id="privacy">
